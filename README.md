@@ -1,5 +1,5 @@
 Visão Geral:
-Este repositório contém o projeto integrador multidisciplinar desenvolvido para o 4º semestre do curso de Ciência da Computação. O objetivo é simular a presença digital e o ecossistema tecnológico completo de uma empresa real ([Nome da Empresa]), integrando desenvolvimento web, programação estruturada em C e modelagem de banco de dados relacional.
+Este repositório contém o projeto integrador multidisciplinar desenvolvido para o 4º semestre do curso de Ciência da Computação. O objetivo é simular a presença digital e o ecossistema tecnológico completo de uma empresa real XPTO, integrando desenvolvimento web, programação estruturada em C e modelagem de banco de dados relacional.
 
 📂 Organização do Projeto
 01-website/ — Presença Web Institutional:
