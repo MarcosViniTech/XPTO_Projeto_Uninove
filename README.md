@@ -1,21 +1,107 @@
-Visão Geral:
-Este repositório contém o projeto integrador multidisciplinar desenvolvido para o 4º semestre do curso de Ciência da Computação. O objetivo é simular a presença digital e o ecossistema tecnológico completo de uma empresa real XPTO, integrando desenvolvimento web, programação estruturada em C e modelagem de banco de dados relacional.
+# XPTO Tecnologia
 
-📂 Organização do Projeto
-01-website/ — Presença Web Institutional:
-Site institucional completo composto por 5 páginas interligadas (Home, Sobre, Serviços, Portfólio e Contato), desenvolvidas exclusivamente com HTML5 semântico e CSS3 responsivo.
+Projeto acadêmico desenvolvido para representar a presença digital e o funcionamento de uma empresa fictícia do setor de Tecnologia da Informação.
 
-02-sistema-c/ — Sistema Operacional Interno (CLI):
-Programa em Linguagem C executado em terminal/console que simula a lógica de negócios da empresa. Contém menu interativo, manipulação de structs, vetores, estruturas de repetição e de decisão para cadastro e gerenciamento operacional.
+## 📌 Sobre a empresa
 
-03-banco-de-dados/ — Modelagem e Scripts SQL:
-Estrutura do banco de dados relacional da empresa. Contém scripts DDL para criação de tabelas, chaves primárias e estrangeiras (PK/FK), além de scripts DML com dados de teste (INSERT) e consultas analíticas (SELECT com JOIN).
+A **XPTO Tecnologia** é uma empresa fictícia especializada no desenvolvimento de soluções de software para pequenas e médias empresas.
 
-🛠️ Tecnologias Utilizadas
-Web Frontend: HTML5, CSS3
+Seu objetivo é oferecer ferramentas simples, eficientes e acessíveis para auxiliar na organização e no gerenciamento das atividades empresariais, facilitando o controle de clientes, produtos, serviços, vendas e informações.
 
-Linguagem de Programação: C (GCC)
+## 🎯 Soluções
 
-Banco de Dados: SQL (DDL/DML)
+Entre as principais soluções propostas pela XPTO Tecnologia estão:
 
-Versionamento: Git e GitHub
+* Cadastro e gerenciamento de clientes
+* Cadastro e gerenciamento de produtos
+* Cadastro e gerenciamento de serviços
+* Controle de vendas
+* Organização das informações empresariais
+* Gerenciamento de dados
+
+## 💻 Sobre o projeto
+
+O projeto reúne diferentes componentes desenvolvidos durante as atividades acadêmicas, simulando a estrutura tecnológica de uma empresa.
+
+### Site institucional
+
+Desenvolvimento de um site institucional para apresentação da empresa, seus serviços, projetos e informações de contato.
+
+### Sistema em C
+
+Desenvolvimento de um sistema em linguagem C, executado em modo console, simulando uma funcionalidade relacionada às operações da empresa.
+
+### Banco de dados
+
+Implementação de um banco de dados utilizando SQL, incluindo:
+
+* Criação de tabelas
+* Chaves primárias e estrangeiras
+* Relacionamentos
+* Inserção de dados
+* Consultas com `SELECT`
+
+## 🛠️ Tecnologias
+
+* HTML5
+* CSS3
+* C
+* SQL
+* Git
+* GitHub
+
+## 📂 Estrutura do repositório
+
+```text
+XPTO-Tecnologia/
+│
+├── site/
+│   ├── HTML
+│   ├── CSS
+│   └── imagens
+│
+├── sistema-c/
+│   └── arquivos .c
+│
+├── banco-de-dados/
+│   ├── scripts .sql
+│   └── DER
+│
+└── README.md
+```
+
+## 🏢 Estrutura organizacional
+
+A XPTO Tecnologia possui as seguintes áreas:
+
+* **Direção/Gestão** — planejamento estratégico e acompanhamento dos projetos.
+* **Desenvolvimento de Software** — criação, implementação, testes e manutenção dos sistemas.
+* **Design e Interface** — identidade visual, interfaces e experiência de utilização.
+* **Banco de Dados** — modelagem, organização e manutenção dos dados.
+* **Comercial e Atendimento** — relacionamento com clientes e identificação de necessidades.
+* **Documentação e Qualidade** — documentação e verificação da qualidade dos materiais produzidos.
+
+## 🎯 Missão
+
+Desenvolver soluções tecnológicas simples, eficientes e acessíveis que auxiliem empresas na organização e gerenciamento de suas atividades.
+
+## 🔭 Visão
+
+Tornar-se uma empresa reconhecida pela qualidade, praticidade e confiabilidade de suas soluções tecnológicas.
+
+## 💡 Valores
+
+* Inovação
+* Qualidade
+* Ética
+* Compromisso com o cliente
+* Simplicidade
+* Trabalho em equipe
+
+## 🎓 Projeto acadêmico
+
+Projeto desenvolvido como parte das atividades do curso de **Ciência da Computação**, reunindo conhecimentos de desenvolvimento web, programação, banco de dados, documentação e organização de projetos.
+
+---
+
+**XPTO Tecnologia — Tecnologia para simplificar e organizar negócios.**
