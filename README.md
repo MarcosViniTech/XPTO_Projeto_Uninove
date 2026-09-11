@@ -100,7 +100,7 @@ Tornar-se uma empresa reconhecida pela qualidade, praticidade e confiabilidade d
 
 ## 🎓 Projeto acadêmico
 
-Projeto desenvolvido como parte das atividades do 4 semestre do curso de **Ciência da Computação**, reunindo conhecimentos de desenvolvimento web, programação e banco de dados.
+Projeto desenvolvido como parte das atividades do 4º Semestre do curso de **Ciência da Computação**, reunindo conhecimentos de desenvolvimento web, programação e banco de dados.
 
 ---
 
