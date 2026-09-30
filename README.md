@@ -1,8 +1,10 @@
 XPTO Tecnologia
 Projeto acadêmico desenvolvido para representar a presença digital e o funcionamento de uma empresa fictícia do setor de Tecnologia da Informação.
+
 📌 Sobre a empresa
 A XPTO Tecnologia é uma empresa fictícia especializada no desenvolvimento de soluções de software para pequenas e médias empresas.
 Seu objetivo é oferecer ferramentas simples, eficientes e acessíveis para auxiliar na organização e no gerenciamento das atividades empresariais, facilitando o controle de clientes, produtos, serviços, vendas e informações.
+
 🎯 Soluções
 Entre as principais soluções propostas pela XPTO Tecnologia estão:
 Cadastro e gerenciamento de clientes
@@ -11,6 +13,7 @@ Cadastro e gerenciamento de serviços
 Controle de vendas
 Organização das informações empresariais
 Gerenciamento de dados
+
 💻 Sobre o projeto
 O projeto reúne diferentes componentes desenvolvidos durante as atividades acadêmicas, simulando a estrutura tecnológica de uma empresa.
 Site institucional
@@ -24,6 +27,7 @@ Chaves primárias e estrangeiras
 Relacionamentos
 Inserção de dados
 Consultas com SELECT
+
 🛠️ Tecnologias
 HTML5
 CSS3
@@ -31,6 +35,7 @@ C
 SQL
 Git
 GitHub
+
 📂 Estrutura do repositório
 XPTO-Tecnologia/
 │
@@ -56,10 +61,13 @@ Design e Interface — identidade visual, interfaces e experiência de utilizaç
 Banco de Dados — modelagem, organização e manutenção dos dados.
 Comercial e Atendimento — relacionamento com clientes e identificação de necessidades.
 Documentação e Qualidade — documentação e verificação da qualidade dos materiais produzidos.
+
 🎯 Missão
 Desenvolver soluções tecnológicas simples, eficientes e acessíveis que auxiliem empresas na organização e gerenciamento de suas atividades.
+
 🔭 Visão
 Tornar-se uma empresa reconhecida pela qualidade, praticidade e confiabilidade de suas soluções tecnológicas.
+
 💡 Valores
 Inovação
 Qualidade
@@ -67,6 +75,7 @@ Qualidade
 Compromisso com o cliente
 Simplicidade
 Trabalho em equipe
+
 🎓 Projeto acadêmico
 Projeto desenvolvido como parte das atividades do 4º Semestre do curso de Ciência da Computação, reunindo conhecimentos de desenvolvimento web, programação e banco de dados.
 
