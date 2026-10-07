@@ -1,44 +1,44 @@
-# ?? Sistema de Gest„o de Vendas e ServiÁos ó XPTO
+# üõí Sistema de Gest√£o de Vendas e Servi√ßos ‚Äî XPTO
 
-Este repositÛrio contÈm a documentaÁ„o tÈcnica, modelagem de dados e scripts SQL (DDL, DML e DQL) para o sistema de gest„o da **XPTO**. 
+Este reposit√≥rio cont√©m a documenta√ß√£o t√©cnica, modelagem de dados e scripts SQL (DDL, DML e DQL) para o sistema de gest√£o da **XPTO**. 
 
-O projeto foi projetado para registrar e controlar as vendas de licenÁas de software (**SaaS**), **Add-Ons** e a prestaÁ„o de **serviÁos de tecnologia**.
+O projeto foi projetado para registrar e controlar as vendas de licen√ßas de software (**SaaS**), **Add-Ons** e a presta√ß√£o de **servi√ßos de tecnologia**.
 
 ---
 
-## ?? Õndice
-- [Vis„o Geral](#-vis„o-geral)
+## üìå √çndice
+- [Vis√£o Geral](#-vis√£o-geral)
 - [Diagrama Entidade-Relacionamento (DER)](#-diagrama-entidade-relacionamento-der)
 - [Modelagem de Dados](#-modelagem-de-dados)
 - [Estrutura de Arquivos](#-estrutura-de-arquivos)
 - [Scripts SQL](#-scripts-sql)
-  - [1. DDL ó Estrutura](#1-ddl--data-definition-language)
-  - [2. DML ó InserÁ„o de Dados](#2-dml--data-manipulation-language)
-  - [3. DQL ó Consultas](#3-dql--data-query-language)
-- [Resultados da ExecuÁ„o no SGBD](#-resultados-da-execuÁ„o-no-sgbd)
+  - [1. DDL ‚Äî Estrutura](#1-ddl--data-definition-language)
+  - [2. DML ‚Äî Inser√ß√£o de Dados](#2-dml--data-manipulation-language)
+  - [3. DQL ‚Äî Consultas](#3-dql--data-query-language)
+- [Resultados da Execu√ß√£o no SGBD](#-resultados-da-execu√ß√£o-no-sgbd)
 - [Como Executar o Projeto](#-como-executar-o-projeto)
 
 ---
 
-## ?? Vis„o Geral
+## üöÄ Vis√£o Geral
 
-A soluÁ„o permite mapear o ciclo completo de venda da XPTO:
-- Cadastro e controle de **Clientes** (Pessoa JurÌdica);
-- Cat·logo de **Produtos** (Planos SaaS e Add-Ons) com flag de status ativo/inativo;
-- Cat·logo de **ServiÁos** tÈcnicos prestados pela equipe;
+A solu√ß√£o permite mapear o ciclo completo de venda da XPTO:
+- Cadastro e controle de **Clientes** (Pessoa Jur√≠dica);
+- Cat√°logo de **Produtos** (Planos SaaS e Add-Ons) com flag de status ativo/inativo;
+- Cat√°logo de **Servi√ßos** t√©cnicos prestados pela equipe;
 - Registro centralizado de **Vendas**;
-- Detalhamento de itens de cada pedido (**Itens da Venda**), permitindo a combinaÁ„o flexÌvel de produtos e serviÁos em um mesmo pedido.
+- Detalhamento de itens de cada pedido (**Itens da Venda**), permitindo a combina√ß√£o flex√≠vel de produtos e servi√ßos em um mesmo pedido.
 
 ---
 
-## ?? Diagrama Entidade-Relacionamento (DER)
+## üìä Diagrama Entidade-Relacionamento (DER)
 
 ```mermaid
 erDiagram
     CLIENTE ||--o{ VENDA : "realiza"
     VENDA ||--|{ ITEM_VENDA : "possui"
-    PRODUTO ||--o{ ITEM_VENDA : "È contido em"
-    SERVICO ||--o{ ITEM_VENDA : "È contido em"
+    PRODUTO ||--o{ ITEM_VENDA : "√© contido em"
+    SERVICO ||--o{ ITEM_VENDA : "√© contido em"
 
     CLIENTE {
         int id_cliente PK
