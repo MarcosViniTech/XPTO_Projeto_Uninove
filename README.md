@@ -1,6 +1,6 @@
 # XPTO Tecnologia
 
-**Projeto Integrador | 4º Semestre de Ciência da Computação**
+**Projeto Acadêmico | 4º Semestre de Ciência da Computação | UNINOVE**
 
 Projeto acadêmico desenvolvido em equipe, simulando a estrutura tecnológica de uma empresa fictícia do setor de Tecnologia da Informação. A proposta reúne soluções de desenvolvimento web, programação em C e banco de dados relacional.
 
