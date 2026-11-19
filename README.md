@@ -15,12 +15,14 @@ Desenvolvimento de um site para apresentar a empresa, seus serviços e informaç
 
 **Tecnologias:** HTML5, CSS3 e JavaScript.
 
+**Repositório Próprio do Site:**[XPTO Web](Sitehttps://github.com/leticianmottola/XPTO-Website).
+
 ### 💻 Sistema de gerenciamento de estoque
 Sistema desenvolvido em linguagem C, executado em modo console, com funcionalidades relacionadas ao gerenciamento de estoque.
 
 **Tecnologia:** Linguagem C.
 
-**Repositório:** [Estoque do Sistema XPTO](https://github.com/leticianmottola/Estoque-do-sistema-XPTO)
+**Repositório Próprio do Sistema:** [Estoque do Sistema XPTO](https://github.com/leticianmottola/Estoque-do-sistema-XPTO)
 
 ### 🗄️ Banco de dados
 Desenvolvimento de banco de dados relacional para organização das informações da empresa, incluindo modelagem, relacionamentos e consultas SQL.
