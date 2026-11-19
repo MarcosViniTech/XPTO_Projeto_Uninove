@@ -2,29 +2,32 @@
 
 **Projeto Acadêmico | 4º Semestre de Ciência da Computação | UNINOVE**
 
-Projeto acadêmico desenvolvido em equipe, simulando a estrutura tecnológica de uma empresa fictícia do setor de Tecnologia da Informação. A proposta reúne soluções de desenvolvimento web, programação em C e banco de dados relacional.
+Projeto acadêmico desenvolvido em equipe, reunindo soluções de desenvolvimento web, programação em C e banco de dados relacional para a empresa XPTO Tecnologia.
 
 ## 💻 Sobre o projeto
 
-A **XPTO Tecnologia** é uma empresa fictícia voltada ao desenvolvimento de soluções tecnológicas para pequenas e médias empresas, com foco na organização e no gerenciamento de informações e atividades empresariais.
+A **XPTO Tecnologia** é uma empresa do setor de Tecnologia da Informação, voltada ao desenvolvimento de soluções tecnológicas para pequenas e médias empresas, com foco na organização e no gerenciamento de informações e atividades empresariais.
 
-O projeto foi dividido em três componentes principais:
+O projeto reúne três componentes principais:
 
 ### 🌐 Website institucional
+
 Desenvolvimento de um site para apresentar a empresa, seus serviços e informações institucionais.
 
 **Tecnologias:** HTML5, CSS3 e JavaScript.
 
-**Repositório Próprio do Site:**[XPTO Web](Sitehttps://github.com/leticianmottola/XPTO-Website).
+**Repositório do website:** [XPTO-Website](https://github.com/leticianmottola/XPTO-Website)
 
 ### 💻 Sistema de gerenciamento de estoque
+
 Sistema desenvolvido em linguagem C, executado em modo console, com funcionalidades relacionadas ao gerenciamento de estoque.
 
 **Tecnologia:** Linguagem C.
 
-**Repositório Próprio do Sistema:** [Estoque do Sistema XPTO](https://github.com/leticianmottola/Estoque-do-sistema-XPTO)
+**Repositório do sistema:** [Estoque-do-sistema-XPTO](https://github.com/leticianmottola/Estoque-do-sistema-XPTO)
 
 ### 🗄️ Banco de dados
+
 Desenvolvimento de banco de dados relacional para organização das informações da empresa, incluindo modelagem, relacionamentos e consultas SQL.
 
 **Tecnologia:** SQL.
@@ -43,28 +46,28 @@ Desenvolvimento de banco de dados relacional para organização das informaçõe
 ```text
 XPTO_Projeto_Uninove/
 │
-├── Site/ 
-│
 ├── Banco_De_Dados/
 │
 ├── Sistema_de_Estoque_em_C/
+│
+├── Site/
 │
 └── README.md
 ```
 
 ## 👥 Integrantes e contribuições
 
-- **Marco:** Organização do projeto e estruturação da empresa fictícia.
-- **Marcos:** Organização dos arquivos, estruturação e gerenciamento do repositório no GitHub.
+- **Marco:** Organização do projeto e estruturação da empresa.
+- **Marcos:** Organização dos arquivos e estruturação e gerenciamento do repositório no GitHub.
 - **Vitor:** Desenvolvimento do site institucional em HTML.
 - **Letícia:** Desenvolvimento do website em conjunto com Vitor e desenvolvimento do sistema em C.
 - **Evelyn:** Modelagem do banco de dados, elaboração do DER e desenvolvimento em SQL.
-- **Jefferson:** Elaboração da documentação técnica do projeto.
+- **Jefferson:** Elaboração da documentação técnica.
 - **Felipe:** Produção do vídeo de apresentação.
 
 ## 🎓 Contexto acadêmico
 
-Projeto desenvolvido como parte do **4º semestre do curso de Bacharelado em Ciência da Computação**, reunindo conhecimentos de desenvolvimento web, programação, banco de dados e trabalho em equipe.
+Projeto desenvolvido durante o **4º semestre do curso de Bacharelado em Ciência da Computação**, reunindo conhecimentos de desenvolvimento web, programação, banco de dados e trabalho em equipe.
 
 ---
 
