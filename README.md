@@ -1,3 +1,5 @@
+🌐 **Acesse o site:** [XPTO Tecnologia](https://leticianmottola.github.io/XPTO-Website/)
+
 # XPTO Tecnologia
 
 **Projeto Acadêmico | 4º Semestre de Ciência da Computação | UNINOVE**
