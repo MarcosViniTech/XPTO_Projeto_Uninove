@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Performance - XPTO </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-position: center top;
+        min-height: 100vh;
+        margin: 0;
+        padding: 16px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start; 
+        overflow-x: hidden;
+        overflow-y: auto; 
+    }
+        
+        .chart-card {
+            background-color: #120e1a;
+            border-radius: 18px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 
+            0 8px 32px rgba(179, 165, 194, 0.1),
+            inset 0 1px 0 rgba(254, 217, 255, 0.411),
+            inset 0 -1px 0 rgba(86, 4, 153, 0.1),
+            inset 0 0 2px 1px rgba(169, 85, 247, 0.623)
+        }
+
+        .chart-card:hover {
+            background-color: #120e1a;
+            border-color: rgba(168, 85, 247, 0.35);
+            box-shadow: 0 10px 30px rgba(168, 85, 247, 0.12);
+        }
+
+        .glass-select {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #e2e8f0;
+            border-radius: 12px;
+            padding: 6px 14px;
+            font-size: 0.8rem;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .glass-select:hover, .glass-select:focus {
+            border-color: rgba(168, 85, 247, 0.7);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
+        }
+
+        .glass-select option {
+            background: #120e1a;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-card w-full p-4 sm:p-6 rounded-2xl">        
+<!-- ================ || HEADER PAINEL || =================== -->
+ <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 sm:mb-6">
+        <div>
+            <h3 class="font-bold text-white text-base sm:text-lg tracking-wide">PAINEL DE PERFORMANCE XPTO</h3>
+            <p class="text-xs text-purple-300 opacity-70">Monitoramento e Otimização em Tempo Real</p>
+        </div>
+        <div>
+<!-- ================ || SELETOR DE PERÍODO || =================== -->
+                <select id="timeframeSelect"  class="bg-white/5 border border-purple-500/30 text-xs sm:text-sm text-purple-200 rounded-xl px-3 py-1.5 focus:outline-none w-full sm:w-auto">
+                    <option value="30d" class="bg-gray-900 text-white">Últimos 30 Dias</option>
+                    <option value="7d" class="bg-gray-900 text-white">Últimos 7 Dias</option>
+                    <option value="90d" class="bg-gray-900 text-white">Últimos 90 Dias</option>
+                    <option value="2026" class="bg-gray-900 text-white">Este Ano</option>
+                </select>
+        </div>
+    </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">      
+            
+            <!-- [GRÁFICO]: Crescimento de Eficiência Mensal -->
+            <div class="lg:col-span-7 chart-card flex flex-col justify-between">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-purple-400"></span>
+                        <h2 class="text-xs sm:text-sm font-semibold text-slate-200">Crescimento de Eficiência Mensal</h2>
+                    </div>
+                    <span id="badge-eficiencia" class="text-[10px] text-purple-300 font-medium bg-purple-500/15 px-2.5 py-0.5 rounded-full border border-purple-500/30">
+                        +15% Média
+                    </span>
+                </div>
+                <div class="relative w-full h-[220px] sm:h-[240px]">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <!-- [GRÁFICO]: Otimização por Setor -->
+            <div class="lg:col-span-5 chart-card flex flex-col justify-between">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400"></span>
+                        <h2 class="text-xs sm:text-sm font-semibold text-slate-200">Otimização por Setor</h2>
+                    </div>
+                    <span id="badge-setor" class="text-[10px] text-indigo-300 font-medium bg-indigo-500/15 px-2.5 py-0.5 rounded-full border border-indigo-500/30">
+                        TI em Destaque
+                    </span>
+                </div>
+                <div class="relative w-full h-[220px] sm:h-[240px]">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-[10px] text-slate-400/60">
+            <span>Sistemas XPTO &bull; Monitoramento Ativo</span>
+            <div class="flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Dados Sincronizados</span>
+            </div>
+        </footer>
+
+    </div>
+
+<!-- ================ || JAVASCRIPT || =================== -->
+    <script>
+        const dashboardData = {
+            '30d': {
+                eficienciaBadge: '+15% Média',
+                setorBadge: 'TI em Destaque',
+                lineLabels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+                lineData: [42, 55, 63, 68, 78, 88],
+                barLabels: ['Financeiro', 'RH', 'TI', 'Logística'],
+                barData: [62, 74, 92, 68]
+            },
+            '7d': {
+                eficienciaBadge: '+22% Esta Semana',
+                setorBadge: 'RH em Alta',
+                lineLabels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+                lineData: [70, 74, 82, 85, 89, 95],
+                barLabels: ['Financeiro', 'RH', 'TI', 'Logística'],
+                barData: [78, 88, 96, 75]
+            },
+            '90d': {
+                eficienciaBadge: '+11% Trimestral',
+                setorBadge: 'Financeiro Estável',
+                lineLabels: ['Mês 1', 'Mês 2', 'Mês 3', 'Mês 4', 'Mês 5', 'Mês 6'],
+                lineData: [32, 45, 54, 62, 71, 81],
+                barLabels: ['Financeiro', 'RH', 'TI', 'Logística'],
+                barData: [58, 65, 84, 60]
+            },
+            '2026': {
+                eficienciaBadge: '+18% Anual',
+                setorBadge: 'Expansão Geral',
+                lineLabels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5', 'Q6'],
+                lineData: [28, 48, 62, 75, 84, 92],
+                barLabels: ['Financeiro', 'RH', 'TI', 'Logística'],
+                barData: [72, 80, 95, 82]
+            }
+        };
+
+        let lineChartInstance = null;
+        let barChartInstance = null;
+
+        window.onload = function() {
+            
+            const ctxLine = document.getElementById('lineChart').getContext('2d');
+            
+            const lineGradient = ctxLine.createLinearGradient(0, 0, 0, 220);
+            lineGradient.addColorStop(0, 'rgba(168, 85, 247, 0.45)');
+            lineGradient.addColorStop(0.7, 'rgba(99, 102, 241, 0.1)');
+            lineGradient.addColorStop(1, 'rgba(16, 12, 24, 0)');
+
+            lineChartInstance = new Chart(ctxLine, {
+                type: 'line',
+                data: {
+                    labels: dashboardData['30d'].lineLabels,
+                    datasets: [{
+                        label: 'Eficiência (%)',
+                        data: dashboardData['30d'].lineData,
+                        fill: true,
+                        backgroundColor: lineGradient,
+                        borderColor: '#a855f7',
+                        borderWidth: 2.5,
+                        pointBackgroundColor: '#ffffff',
+                        pointBorderColor: '#a855f7',
+                        pointBorderWidth: 2,
+                        pointRadius: 4,
+                        pointHoverRadius: 6,
+                        tension: 0.42 
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(16, 12, 24, 0.95)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#a855f7',
+                            borderColor: 'rgba(168, 85, 247, 0.4)',
+                            borderWidth: 1,
+                            padding: 8,
+                            displayColors: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { color: 'rgba(255, 255, 255, 0.04)' },
+                            ticks: { color: '#94a3b8', font: { family: 'Poppins', size: 10 } }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255, 255, 255, 0.04)' },
+                            ticks: { color: '#94a3b8', font: { family: 'Poppins', size: 10 } },
+                            min: 0,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            const ctxBar = document.getElementById('barChart').getContext('2d');
+
+            const barGradient = ctxBar.createLinearGradient(0, 0, 0, 220);
+            barGradient.addColorStop(0, '#a855f7');
+            barGradient.addColorStop(1, '#4f46e5');
+
+            barChartInstance = new Chart(ctxBar, {
+                type: 'bar',
+                data: {
+                    labels: dashboardData['30d'].barLabels,
+                    datasets: [{
+                        label: 'Otimização (%)',
+                        data: dashboardData['30d'].barData,
+                        backgroundColor: barGradient,
+                        borderRadius: 6,
+                        borderSkipped: false,
+                        barThickness: 24
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(16, 12, 24, 0.95)',
+                            titleColor: '#ffffff',
+                            bodyColor: '#818cf8',
+                            borderColor: 'rgba(129, 140, 248, 0.4)',
+                            borderWidth: 1,
+                            padding: 8,
+                            displayColors: false
+                        }
+                    },
+                    scales: {
+                        x: {
+                            /* MODIFICAÇÃO: Ativadas as linhas verticais para alinhar ao estilo do primeiro gráfico */
+                            grid: { color: 'rgba(255, 255, 255, 0.04)' },
+                            ticks: { color: '#94a3b8', font: { family: 'Poppins', size: 10 } }
+                        },
+                        y: {
+                            grid: { color: 'rgba(255, 255, 255, 0.04)' },
+                            ticks: { color: '#94a3b8', font: { family: 'Poppins', size: 10 } },
+                            min: 0,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            document.getElementById('timeframeSelect').addEventListener('change', function(e) {
+                const selectedKey = e.target.value;
+                const newData = dashboardData[selectedKey];
+
+                if (!newData) return;
+
+                document.getElementById('badge-eficiencia').innerText = newData.eficienciaBadge;
+                document.getElementById('badge-setor').innerText = newData.setorBadge;
+
+                lineChartInstance.data.labels = newData.lineLabels;
+                lineChartInstance.data.datasets[0].data = newData.lineData;
+                lineChartInstance.update('active');
+
+                barChartInstance.data.labels = newData.barLabels;
+                barChartInstance.data.datasets[0].data = newData.barData;
+                barChartInstance.update('active');
+            });
+        };
+    </script>
+</body>
+</html>
