@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- ================ || INSTRUÇÕES INICIAIS | BASIC INSTRUCTIONS || =================== -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços & Planos | XPTO</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="XPTO Logotipo" class="logo-brand">
+                <span class="logo-text">XPTO</span>
+            </a>
+
+    <nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="servicos.html" class="nav-link active">Serviços</a></li>
+        <li><a href="portfolio.html" class="nav-link">Clientes</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li class="mobile-only-action"><a href="contato.html" class="btn btn-primary" style="width: 100%; text-align: center;">Falar Conosco</a></li>
+        </ul>
+    </nav>
+
+    <div class="nav-actions">
+        <a href="contato.html" class="btn btn-outline">Consultar Serviços</a>
+        <a href="contato.html" class="btn btn-primary">Falar Conosco</a>
+    </div>
+</header>
+
+    <main class="services-page">
+        <!-- ==================== || 1. HERO SERVIÇOS || ==================== -->
+        <section class="services-hero">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container text-center">
+                <span class="badge">Para Pequenas e Médias Empresas</span>
+                <h1 class="hero-title">Soluções que <span class="text-gradient">escalam</span><br>com sua empresa.</h1>
+                <p class="hero-description">Ecossistema completo em nuvem com licenças de software SaaS, módulos fiscais e suporte dedicado <br> para modernizar a sua operação. Pague apenas pelo que utilizar.</p>
+            </div>
+        </section>
+
+        <!-- ==================== || 2. SAAS (PLANOS DE ASSINATURA) || ==================== -->
+        <section class="pricing-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Planos SaaS</span>
+                    <h2 class="section-title">Escolha a sua solução.</h2>
+                    <p class="section-subtitle">Sistemas em nuvem para controle total da sua empresa de qualquer lugar.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>XPTO STARTER</h3>
+                            <p>Para quem está começando e precisa de organização.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">149</span>
+                            <span class="cents">,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Sistema Base em Nuvem</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Controle de Clientes (CRM base)</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Gestão de Serviços</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-outline btn-full">Assinar Starter</a>
+                    </div>
+
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Mais Escolhido</div>
+                        <div class="pricing-header">
+                            <h3>XPTO PRO</h3>
+                            <p>A solução ideal para operações em crescimento.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">299</span>
+                            <span class="cents">,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Tudo do plano Starter</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Controle de Vendas</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Emissão de Relatórios Simples</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Painel de Dashboard Analítico</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-primary btn-full">Assinar PRO</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>XPTO FULL</h3>
+                            <p>O ecossistema completo (ERP) para alta performance.</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">650</span>
+                            <span class="cents">,00</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Tudo do plano PRO</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Controle de Estoque</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Controle Financeiro Completo</li>
+                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Banco de Dados Reforçado</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-outline btn-full">Assinar FULL</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== || 3. ADD-ONS E MÓDULOS || ==================== -->
+        <section class="addons-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Add-Ons</span>
+                    <h2 class="section-title">Expanda o seu sistema.</h2>
+                    <p class="section-subtitle">Compre "por fora" e ligue diretamente à sua plataforma XPTO para potencializar os seus resultados.</p>
+                </div>
+
+                <div class="addons-grid">
+                    <div class="addon-card">
+                        <div class="addon-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <div class="addon-content">
+                            <h3>Cloud Backup</h3>
+                            <p>Espaço extra de banco de dados em nuvem para máxima qualidade e garantia de segurança das suas informações cruciais.</p>
+                            <span class="addon-price">+ R$ 99,90/mês</span>
+                        </div>
+                    </div>
+
+                    <div class="addon-card">
+                        <div class="addon-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="addon-content">
+                            <h3>Emissor de Notas Fiscais</h3>
+                            <p>Um sistema de automação robusto e integrado para facilitar o controle das suas vendas e manter a conformidade legal.</p>
+                            <span class="addon-price">+ R$ 89,90/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== || 4. SERVIÇOS DE TECNOLOGIA || ==================== -->
+        <section class="tech-services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">Equipe Especializada</span>
+                    <h2 class="section-title">Serviços de tecnologia.</h2>
+                    <p class="section-subtitle">Deixe a complexidade técnica conosco! Serviços complementares de implementação, suporte e capacitação.</p>
+                </div>
+
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 16 12 12 8 16"></polyline>
+                                <line x1="12" y1="12" x2="12" y2="21"></line>
+                                <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+                                <polyline points="16 16 12 12 8 16"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Pacote de Migração de Dados</h3>
+                        <p>Transferimos e organizamos todos os dados do seu sistema antigo para a plataforma XPTO de forma rápida e segura, sem perdas.</p>
+                        <div class="tech-footer">
+                            <span class="tech-price">R$ 1.200,00</span>
+                            <span class="tech-type">Taxa Única</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Treinamento de Equipe</h3>
+                        <p>Os nossos especialistas capacitam os funcionários da sua empresa para utilizarem todo o potencial do sistema no dia a dia.</p>
+                        <div class="tech-footer">
+                            <span class="tech-price">R$ 845,50</span>
+                            <span class="tech-type">Por Sessão</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3>Suporte Técnico Full</h3>
+                        <p>Garantia de tranquilidade total. Contrato de manutenção contínua com atendimento prioritário 24/7 para resolução de urgências.</p>
+                        <div class="tech-footer">
+                            <span class="tech-price">R$ 199,90</span>
+                            <span class="tech-type">/mês</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/logo.png" alt="Logo XPTO" class="logo-brand">
+                    <span class="logo-text">XPTO</span>
+                </a>
+                <p class="footer-description">
+                    Modernizando processos e impulsionando a eficiência operacional de empresas com arquitetura escalável em nuvem.
+                </p>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span>Todos os sistemas em nuvem operacionais</span>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Soluções</h4>
+                <ul>
+                    <li><a href="servicos.html">XPTO PRO</a></li>
+                    <li><a href="servicos.html">XPTO FULL</a></li>
+                    <li><a href="servicos.html">Emissor Fiscal</a></li>
+                    <li><a href="servicos.html">Cloud Backup</a></li>
+                    <li><a href="servicos.html">Consultoria B2B</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Radar Tecnológico</h4>
+                <p>Receba insights sobre automação, performance e novidades da plataforma.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="seu@email.com" required aria-label="Seu e-mail">
+                    <button type="submit" aria-label="Inscrever-se">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <span class="newsletter-note">Sem spam. Cancele quando quiser.</span>
+                <span class="newsletter-note">Projeto de Desenvolvimento de Software - Univesidade Nove de Julho (UNINOVE).</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 XPTO Tecnologia. Todos os direitos reservados. <br> CNPJ: 12.345.678/0001-95</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Segurança & LGPD</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
