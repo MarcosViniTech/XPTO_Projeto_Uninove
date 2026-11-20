@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- ================ || INSTRUÇÕES INICIAIS | BASIC INSTRUCTIONS || =================== -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | XPTO</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="XPTO Logotipo" class="logo-brand">
+                <span class="logo-text">XPTO</span>
+            </a>
+
+    <nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="portfolio.html" class="nav-link">Clientes</a></li>
+        <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        <li class="mobile-only-action"><a href="contato.html" class="btn btn-primary" style="width: 100%; text-align: center;">Falar Conosco</a></li>
+    </ul>
+        </nav>
+
+    <div class="nav-actions">
+        <a href="contato.html" class="btn btn-outline">Consultar Serviços</a>
+        <a href="contato.html" class="btn btn-primary">Falar Conosco</a>
+    </div>
+</header>
+<main class="contact-page">
+        <!-- ==================== || 1. CABEÇALHO DA PÁGINA || ==================== -->
+        <section class="page-header">
+            <div class="container text-center">
+                <span class="badge">Fale Conosco</span>
+                <h1 class="contact-title">Entre em <span class="text-gradient">Contato</span>.</h1>
+                <p class="hero-description">Possui alguma dúvida sobre preços, planos, contrato ou até qual é o plano ideal para você? <br>Preencha o formulário e entraremos em contato para ajudar com as respostas.</p>
+            </div>
+        </section>
+
+        <!-- ==================== || 2. ZONA DO FORMULÁRIO || ==================== -->
+        <section class="form-section">
+            <div class="container">
+                <div class="form-wrapper">
+                    <form action="#" method="POST" class="contact-form">
+                        
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="firstName">Primeiro nome*</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Ex: Maria" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="lastName">Sobrenome*</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Ex: Silva" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="firstName">Telefone (Preferencialmente WhatsApp)*</label>
+                                <input type="number" id="phoneNumber" name="phoneNumber" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="lastName">Site da empresa*</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Ex: Silva" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row full-width">
+                            <div class="input-group">
+                                <label for="email">E-mail corporativo*</label>
+                                <input type="email" id="email" name="email" placeholder="Ex: XPTO@empresa.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="input-group">
+                                <label for="country">País de origem*</label>
+                                <div class="custom-select">
+                                    <select id="country" name="country" required>
+                                        <option value="" disabled selected>Selecione o seu país...</option>
+                                        <option value="br">Brasil</option>
+                                        <option value="pt">Portugal</option>
+                                        <option value="us">Estados Unidos</option>
+                                        <option value="other">Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="companyType">Qual o tipo da sua empresa?*</label>
+                                <div class="custom-select">
+                                    <select id="companyType" name="companyType" required>
+                                        <option value="" disabled selected>Selecione a categoria...</option>
+                                        <option value="startup">Startup</option>
+                                        <option value="smb">Pequena/Média Empresa</option>
+                                        <option value="enterprise">Grande Empresa</option>
+                                        <option value="individual">Particular/Independente</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row full-width">
+                            <div class="input-group">
+                                <label for="message">Mensagem*</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== || 3. FAQ SECTION || ==================== -->
+        <section class="faq-section">
+            <div class="container faq-container">
+                
+                <div class="faq-header">
+                    <span class="badge">FAQ</span>
+                    <h2 class="faq-title">Perguntas<br> <span class="faq-title-span">Frequentes</span></h2>
+                    <p class="hero-description">Tem dúvidas? A nossa seção garantida de FAQ tem tudo o que precisa com respostas rápidas às questões mais comuns.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            O que é preciso para começar?
+                            <span class="icon-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Basta entrar em contato conosco através do formulário acima! Agendaremos uma reunião inicial para entender as suas necessidades e desenhar um plano de ação personalizado para a sua empresa.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Que tipo de personalização está disponível?
+                            <span class="icon-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos personalização completa, desde a arquitetura de software até ao design da interface, garantindo que a solução final se adapte 100% aos processos e à marca do seu negócio.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Os serviços disponíveis da XPTO são de fácil compreensão para novos usuários?
+                            <span class="icon-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O nosso departamento de Design e Interface foca especialmente em criar experiências ao usuário intuitivas. Além disso, o nosso time de Documentação fornece manuais e formação para garantir uma fácil assimilação e aprendizado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            É preciso saber algo relacionado a programação?
+                            <span class="icon-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>De forma alguma. Nós tratamos de todo o desenvolvimento técnico, infraestrutura e banco de dados. A sua única preocupação será operar o seu negócio de forma mais eficiente conosco no comando das partes mais complexas!</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Quanto tempo demora a implementação?
+                            <span class="icon-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O tempo varia dependendo da complexidade do projeto. Soluções mais simples podem estar prontas em semanas, enquanto sistemas complexos podem levar meses. Definimos prazos claros durante a fase de diagnóstico.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/logo.png" alt="Logo XPTO" class="logo-brand">
+                    <span class="logo-text">XPTO</span>
+                </a>
+                <p class="footer-description">
+                    Modernizando processos e impulsionando a eficiência operacional de empresas com arquitetura escalável em nuvem.
+                </p>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span>Todos os sistemas em nuvem operacionais</span>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Soluções</h4>
+                <ul>
+                    <li><a href="servicos.html">XPTO PRO</a></li>
+                    <li><a href="servicos.html">XPTO FULL</a></li>
+                    <li><a href="servicos.html">Emissor Fiscal</a></li>
+                    <li><a href="servicos.html">Cloud Backup</a></li>
+                    <li><a href="servicos.html">Consultoria B2B</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Radar Tecnológico</h4>
+                <p>Receba insights sobre automação, performance e novidades da plataforma.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="seu@email.com" required aria-label="Seu e-mail">
+                    <button type="submit" aria-label="Inscrever-se">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <span class="newsletter-note">Sem spam. Cancele quando quiser.</span>
+                <span class="newsletter-note">Projeto de Desenvolvimento de Software - Univesidade Nove de Julho (UNINOVE).</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 XPTO Tecnologia. Todos os direitos reservados. <br> CNPJ: 12.345.678/0001-95</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Segurança & LGPD</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const questionBtn = item.querySelector('.faq-question');
+                
+                questionBtn.addEventListener('click', () => {
+                    const currentlyActive = document.querySelector('.faq-item.active');
+                    if (currentlyActive && currentlyActive !== item) {
+                        currentlyActive.classList.remove('active');
+                        currentlyActive.querySelector('.icon-plus').textContent = '+';
+                    }
+
+                    item.classList.toggle('active');
+                    
+                    const icon = item.querySelector('.icon-plus');
+                    if (item.classList.contains('active')) {
+                        icon.textContent = '−';
+                    } else {
+                        icon.textContent = '+';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
