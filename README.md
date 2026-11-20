@@ -65,7 +65,6 @@ XPTO_Projeto_Uninove/
 - **Letícia:** Desenvolvimento do website em conjunto com Vitor e desenvolvimento do sistema em C.
 - **Evelyn:** Modelagem do banco de dados, elaboração do DER e desenvolvimento em SQL.
 - **Jefferson:** Elaboração da documentação técnica.
-- **Felipe:** Produção do vídeo de apresentação.
 
 ## 🎓 Contexto acadêmico
 
