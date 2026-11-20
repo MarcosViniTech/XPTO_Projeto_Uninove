@@ -1,6 +1,6 @@
 # XPTO Tecnologia
 
-**Projeto Acadêmico | 4º Semestre de Ciência da Computação**
+**Projeto Acadêmico | 4º Semestre de Ciência da Computação | UNINOVE**
 
 Projeto acadêmico desenvolvido em equipe, reunindo soluções de desenvolvimento web, programação em C e banco de dados relacional para a empresa XPTO Tecnologia.
 
