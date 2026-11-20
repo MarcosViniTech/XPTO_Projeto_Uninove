@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- ================ || INSTRUÇÕES INICIAIS | BASIC INSTRUCTIONS || =================== -->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | XPTO</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="./assets/logo.png" alt="XPTO Logotipo" class="logo-brand">
+                <span class="logo-text">XPTO</span>
+            </a>
+
+    <nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+        <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre Nós</a></li>
+        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Clientes</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li class="mobile-only-action"><a href="contato.html" class="btn btn-primary" style="width: 100%; text-align: center;">Falar Conosco</a></li>
+        </ul>      
+    </nav>
+
+    <div class="nav-actions">
+        <a href="contato.html" class="btn btn-outline">Consultar Serviços</a>
+        <a href="contato.html" class="btn btn-primary">Falar Conosco</a>
+    </div>
+</header>
+
+<!-- ==================== || 1. CABEÇALHO DO PORTFÓLIO || ==================== -->
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <span class="badge">Portfólio</span>
+                <h1 class="hero-title">
+                    Casos de <span class="text-gradient">sucesso.</span>
+                </h1>
+                <p class="hero-description">Descubra e avalie como os nossos sistemas e serviços transformaram as operações <br>de pequenas e médias empresas em casos de sucesso absoluto!</p>
+            </div>
+        </section>
+
+        <!-- ==================== || 2. SEÇÃO DE PROJETOS || ==================== -->
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos em destaque.</h2>
+                    <p class="section-subtitle">Conheça algumas das soluções que desenvolvemos e implementamos.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Projeto 1 -->
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Projeto Logística" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">XPTO FULL + Cloud Backup</span>
+                            <h3>Sistema ERP para Logística Express</h3>
+                            <p>Implementação de um ecossistema completo de gestão de estoque, controle de frota e faturação integrada, reduzindo as perdas operacionais em 40%.</p>
+                            <div class="tech-tags">
+                                <span>C</span>
+                                <span>Cloud MySQL</span>
+                                <span>Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 2 -->
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Projeto Varejo" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">XPTO PRO + Emissor NFe</span>
+                            <h3>Automação de Vendas Varejo</h3>
+                            <p>Transição de planilhas manuais para o sistema PRO, garantindo controle em tempo real das vendas de 3 filiais e emissão automática de notas fiscais.</p>
+                            <div class="tech-tags">
+                                <span>C</span>
+                                <span>SaaS</span>
+                                <span>Automação</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projeto 3 -->
+                    <div class="project-card">
+                        <div class="project-image-placeholder">
+                            <!-- Adicione a imagem do projeto aqui -->
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Projeto Clínica" onerror="this.style.display='none'">
+                        </div>
+                        <div class="project-content">
+                            <span class="project-category">Migração de Dados + XPTO Starter</span>
+                            <h3>Gestão de Clientes para Clínica</h3>
+                            <p>Migração segura de um banco de dados legado de 15 anos para o novo ambiente XPTO, acompanhado de formação completa para 20 funcionários.</p>
+                            <div class="tech-tags">
+                                <span>Migração DB</span>
+                                <span>Treinamento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== || 3. SEÇÃO DE AVALIAÇÕES (FEEDBACK & REVIEWS) || ==================== -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge">Feedbacks e Reviews</span>
+                    <h2 class="section-title">Avaliações de clientes.</h2>
+                    <p class="section-subtitle">O que dizem os nossos parceiros que confiam na nossa tecnologia todos os dias.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    
+                    <!-- Avaliação 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar">
+                                <img src="./assets/cliente1.jpg" alt="Foto de Mariana" onerror="this.style.display='none'">
+                            </div>
+                            <div class="rating-stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review-text">"A XPTO transformou completamente a nossa operação de estoque. A expertise técnica da equipa e a transição fluida do nosso banco de dados antigo elevaram a nossa eficiência. Atendemos os nossos clientes de forma muito mais rápida!"</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Mariana Yoshida</h4>
+                            <span class="client-company">LogiPlus</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar">
+                                <img src="./assets/cliente2.jpg" alt="Foto de Miguel" onerror="this.style.display='none'">
+                            </div>
+                            <div class="rating-stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review-text">"Escolher o plano XPTO FULL foi um verdadeiro divisor de águas para o nosso mercado. O emissor de notas fiscais integrado e o dashboard de vendas em nuvem nos deram um insight que nunca tivemos antes! Recomendo de olhos fechados."</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Miguel Cardoso</h4>
+                            <span class="client-company">Supermercado Cardoso</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="client-avatar">
+                                <img src="./assets/cliente3.jpg" alt="Foto de Mauro" onerror="this.style.display='none'">
+                            </div>
+                            <div class="rating-stars">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <p class="review-text">"O suporte técnico 24/7 é fantástico. Qualquer dúvida que a nossa equipe teve durante a adaptação ao XPTO PRO foi resolvida rapidamente. O fato de pagarmos apenas pelo que usamos através de módulos faz todo o sentido financeiro."</p>
+                        <div class="client-info">
+                            <h4 class="client-name">Mauro Araujo</h4>
+                            <span class="client-company">GRUPO FINANMAX</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+<!-- ==================== || FOOTER || ==================== -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="./assets/logo.png" alt="Logo XPTO" class="logo-brand">
+                    <span class="logo-text">XPTO</span>
+                </a>
+                <p class="footer-description">
+                    Modernizando processos e impulsionando a eficiência operacional de empresas com arquitetura escalável em nuvem.
+                </p>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span>Todos os sistemas em nuvem operacionais</span>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#" aria-label="LinkedIn" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub" class="social-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Soluções</h4>
+                <ul>
+                    <li><a href="servicos.html">XPTO PRO</a></li>
+                    <li><a href="servicos.html">XPTO FULL</a></li>
+                    <li><a href="servicos.html">Emissor Fiscal</a></li>
+                    <li><a href="servicos.html">Cloud Backup</a></li>
+                    <li><a href="servicos.html">Consultoria B2B</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Radar Tecnológico</h4>
+                <p>Receba insights sobre automação, performance e novidades da plataforma.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="seu@email.com" required aria-label="Seu e-mail">
+                    <button type="submit" aria-label="Inscrever-se">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </form>
+                <span class="newsletter-note">Sem spam. Cancele quando quiser.</span>
+                <span class="newsletter-note">Projeto de Desenvolvimento de Software - Univesidade Nove de Julho (UNINOVE).</span>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 XPTO Tecnologia. Todos os direitos reservados. <br> CNPJ: 12.345.678/0001-95</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Segurança & LGPD</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const navLinks = document.getElementById('navLinks');
+            
+            if(mobileMenuBtn && navLinks) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
