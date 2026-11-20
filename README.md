@@ -1,10 +1,8 @@
 # XPTO Tecnologia
 
-**Projeto Acadêmico | 4º Semestre de Ciência da Computação | UNINOVE**
+**Projeto Acadêmico | 4º Semestre de Ciência da Computação**
 
 Projeto acadêmico desenvolvido em equipe, reunindo soluções de desenvolvimento web, programação em C e banco de dados relacional para a empresa XPTO Tecnologia.
-
-🌐 **Acesse o site:** [XPTO Tecnologia](https://leticianmottola.github.io/XPTO-Website/)
 
 ## 💻 Sobre o projeto
 
@@ -59,12 +57,13 @@ XPTO_Projeto_Uninove/
 
 ## 👥 Integrantes e contribuições
 
-- **Marco:** Organização e estruturação do projeto e da empresa.
-- **Marcos:** Organização dos arquivos, estruturação e gerenciamento do repositório no GitHub.
+- **Marco:** Organização do projeto e estruturação da empresa.
+- **Marcos:** Organização dos arquivos e estruturação e gerenciamento do repositório no GitHub.
 - **Vitor:** Desenvolvimento do site institucional em HTML.
 - **Letícia:** Desenvolvimento do website em conjunto com Vitor e desenvolvimento do sistema em C.
 - **Evelyn:** Modelagem do banco de dados, elaboração do DER e desenvolvimento em SQL.
 - **Jefferson:** Elaboração da documentação técnica.
+- **Felipe:** Produção do vídeo de apresentação.
 
 ## 🎓 Contexto acadêmico
 
