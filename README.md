@@ -59,7 +59,7 @@ XPTO_Projeto_Uninove/
 
 ## 👥 Integrantes e contribuições
 
-- **Marco:** Organização do projeto e estruturação da empresa.
+- **Marco:** Organização do projeto, Vídeo e estruturação da empresa.
 - **Marcos:** Organização dos arquivos e estruturação e gerenciamento do repositório no GitHub.
 - **Vitor:** Desenvolvimento do site institucional em HTML.
 - **Letícia:** Desenvolvimento do website em conjunto com Vitor e desenvolvimento do sistema em C.
