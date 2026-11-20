@@ -4,6 +4,8 @@
 
 Projeto acadêmico desenvolvido em equipe, reunindo soluções de desenvolvimento web, programação em C e banco de dados relacional para a empresa XPTO Tecnologia.
 
+🌐 **Acesse o site:** [XPTO Tecnologia](https://leticianmottola.github.io/XPTO-Website/)
+
 ## 💻 Sobre o projeto
 
 A **XPTO Tecnologia** é uma empresa do setor de Tecnologia da Informação, voltada ao desenvolvimento de soluções tecnológicas para pequenas e médias empresas, com foco na organização e no gerenciamento de informações e atividades empresariais.
